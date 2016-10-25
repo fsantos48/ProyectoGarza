@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0AC4D4D1-41FD-462A-873D-A77EF323B089}</ProjectGuid>
+    <ProjectGuid>{B7863B76-73FE-4E83-A558-D1AE5C4EBD52}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ProyectoGarza.My.MyApplication</StartupObject>
-    <RootNamespace>ProyectoGarza</RootNamespace>
-    <AssemblyName>ProyectoGarza</AssemblyName>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ProyectoGarza.xml</DocumentationFile>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ProyectoGarza.xml</DocumentationFile>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -45,9 +45,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -75,11 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Garza.vb">
+    <Compile Include="Garza2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Garza.Designer.vb">
-      <DependentUpon>Garza.vb</DependentUpon>
+    <Compile Include="Garza2.Designer.vb">
+      <DependentUpon>Garza2.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -99,8 +96,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Garza.resx">
-      <DependentUpon>Garza.vb</DependentUpon>
+    <EmbeddedResource Include="Garza2.resx">
+      <DependentUpon>Garza2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -110,7 +107,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -121,15 +117,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DSC_0089.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DSC_0091.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DSC_0092.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
