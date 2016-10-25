@@ -81,7 +81,7 @@ Partial Class Garza1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.ProyectoGarza.My.Resources.Resources.DSC_0092
+        Me.PictureBox2.Image = Global.ProyectoGarza.My.Resources.Resources.DSC_0089
         Me.PictureBox2.Location = New System.Drawing.Point(15, 294)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(221, 148)
@@ -154,6 +154,7 @@ Partial Class Garza1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Garza1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ProyectoGarza"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
